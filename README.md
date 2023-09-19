@@ -75,7 +75,10 @@ Use the search option to look for an auxiliary module to scan and enumerate the 
 
 Use the auxiliary/scanner/mysql/mysql_version module by typing the module name or associated number to scan MySQL version details. use 11 Or: use auxiliary/scanner/mysql/mysql_version
 
-![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/69e8f46a-fc76-4675-992b-58ea7ed8ec2b)
+![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/ad236cbf-a877-456c-a887-e15641a47782)
+
+Use the set rhosts command to set the parameter and run the module, as follows:
+![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/d048564c-a8a7-44ce-a2db-6e103f54b58a)
 
 After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
 
