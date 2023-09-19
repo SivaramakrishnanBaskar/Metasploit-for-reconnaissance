@@ -31,10 +31,12 @@ Find out the ip address of the attackers system
 
 ### Invoke msfconsole:
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/74829b0b-192b-4d47-ba14-b6ac6d76e218)
+
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 
 ## OUTPUT:
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/e8d04084-852a-47b9-b42b-072ccb979cc9)
+
 Port Scanning: Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000). msf > nmap -sT 192.168.1810/24 -p1-1000
 
 ## OUTPUT:
@@ -46,6 +48,7 @@ scan the targets with the command db_nmap as follows. msf > db_nmap 192.168.181.
 
 ## OUTPUT:
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/a12c96aa-8cc8-44e6-a4d0-bc52cfa557f3)
+
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules. cd /usr/share /metasploit-framework/modules/auxiliary kali > ls -l
 
 ## OUTPUT:
@@ -56,6 +59,7 @@ Metasploit has a multitude of scanning modules built in. If we open another term
 Search is a powerful command in Metasploit that you can use to find what you want to locate. msf >search name:Microsoft type:exploit
 
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/5301a7a0-54e4-4c98-904d-6f8916726153)
+
 The info command provides information regarding a module or platform
 
 ## OUTPUT:
@@ -64,6 +68,7 @@ The info command provides information regarding a module or platform
 Before beginning, set up the Metasploit database by starting the PostgreSQL server and initialize msfconsole database as follows: systemctl start postgresql msfdb init ##MYSQL ENUMERATION Find the IP address of the Metasploitable machine first. Then, use the db_nmap command in msfconsole with Nmap flags to scan the MySQL database at 3306 port. db_nmap -sV -sC -p 3306 <metasploitable_ip_address>
 
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/69b80746-c175-4a11-b75c-67d44b77586e)
+
 Use the search option to look for an auxiliary module to scan and enumerate the MySQL database. search type:auxiliary mysql
 
 ![image](https://github.com/SivaramakrishnanBaskar/Metasploit-for-reconnaissance/assets/119476322/0e280ace-da60-41a5-a03f-669d5c6b397e)
