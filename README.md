@@ -74,8 +74,8 @@ Before beginning, set up the Metasploit database by starting the PostgreSQL serv
 
 ## MYSQL ENUMERATION:
 
-                Find the IP address of the Metasploitable machine first. Then, use the db_nmap command in msfconsole with Nmap flags to scan 
-                the MySQL database at 3306 port.
+Find the IP address of the Metasploitable machine first. Then, use the db_nmap command in msfconsole with Nmap flags to scan 
+the MySQL database at 3306 port.
 
 db_nmap -sV -sC -p 3306 <metasploitable_ip_address>
 
